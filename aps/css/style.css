@@ -16,9 +16,10 @@
   
   .titulo {
     font-size: 2.5rem;
-    color: #25285E;
+    color: #000000;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
     }
   
   .subtitulo{
@@ -26,15 +27,30 @@
     padding-bottom: 1%;
     }
   .descricao {
-    font-size: 1.2rem;
-    color: white;
-    line-height: 1.6;
-    }
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.6;
+  background-color: rgba(55, 64, 111, 0.85); /* fundo com leve transparência */
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* sombra profunda */
+  max-width: 1200px;
+  margin: 40px auto; /* centraliza horizontalmente e dá espaço em cima/baixo */
+  font-family: Arial, sans-serif;
+}
   .imagem-mapa {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
     text-align: center;
-    margin-top: 40px;
-    align-items: center;  
-    }
+}
+
+.imagem-mapa img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+    
 
   .rodape{
     margin-bottom: 15px;
@@ -54,12 +70,112 @@
   
   h2{
     padding: 5% 0 0 0;
+    color: black;
+  }
+  h3{
+    padding: 3% 0 0 0;
+    color: black;
+    
   }
 
   h4{
     color: #CACBDF;
+    
   }
   li::marker{
     color: #CACBDF;
   }
+  .imagem-legenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .imagem-legenda img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .legenda {
+    margin-top: 10px;
+    color: #CACBDF;
+    font-style: italic;
+  }
+  .bemvindo {
+  background-color: #37406F; 
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer; /* estilo de cursos para clicar, apenas teste*/
+}
 
+/* Hover escurecer */
+.bemvindo:hover {
+  background-color: #2E3660;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: white; 
+}
+.destaque {
+  background-color: #37406F; /* tom mais claro que o fundo do site */
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* profundidade */
+  margin: 40px auto;
+  max-width: 900px;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.lista{
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: #4C4F89; 
+    padding: 2rem; 
+    border-radius: 16px;
+    box-shadow: 
+      0 8px 20px rgba(0, 0, 0, 0.3),        /* sombra padrão */
+      0 0 30px rgba(0, 0, 0, 0.15);         /* efeito esfumaçado ao redor */
+  }
+  .botaovoltar {
+  text-align: center;
+}
+
+.botaovoltar-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #25285E;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botaovoltar-link:hover {
+  background-color: #1d204b;
+  transform: scale(1.05);
+}
+
+.botaovoltar-link:active {
+  background-color: #25285E;
+  transform: scale(1);
+}
